@@ -64,7 +64,8 @@ void ShellClassInfo(char FolderName[], char* LocalizedResourceName, char* IconRe
 	else
 	{
 		setAttrib("attrib", "+R", FolderName);
-		setAttrib("attrib", "+A +H +R +S", path);
+		//setAttrib("attrib", "+A +H +R +S", path);
+		setAttrib("attrib", "+A +H +S", path);
 	}
 }
 
